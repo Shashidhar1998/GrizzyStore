@@ -34,6 +34,7 @@ ResultSet resultSet = null;
 <style type="text/css">
 .btn {
 	border-radius: 20px;
+	width:auto;
 	background-color: #F2F2F2;
 }
 input {
@@ -78,20 +79,20 @@ input {
 					<a class="dropdown-item" href="#">Separated link</a>
 				</div></li>
 			<li class="nav-item"><a class="nav-link btn btn-secondary"
-				href="Addproduct.html" role="button"
+				href="navigator.jsp" role="button"
 				style="border-radius: 20px; width: 150px; margin-top: 10px; background-color: #676767">Add
 					Product</a></li>
 		</ul>
 		<br>
-		<table class="table table-hover" rules="cols">
+		<table class="table table-hover table-bordered table-stripped" style="border:6px solid black;border-style:hidden" rules="cols">
 			<thead>
-				<tr>
+				<tr style="color:#d3d3d3">
 					<th scope="col">Product List</th>
 					<th scope="col">Brand</th>
 					<th scope="col">Category</th>
 					<th scope="col">Rating</th>
 					<th scope="col">Price</th>
-					<th scope="col"></th>
+					<th >Options</th>
 				</tr>
 			</thead>
 			 
@@ -112,11 +113,11 @@ input {
 					<td scope="col"><%=resultSet.getString("Category") %></td>
 					<td scope="col">1</td>
 					<td scope="col"><%=resultSet.getString("Price") %></td>
-					<td scope="col"></td>
+					
 					<td>
 	                          <button class="btn" onclick="" >view</button>
-	                          <button class="btn" >view</button>
-	                          <button class="btn" >view</button>
+	                          <button class="btn" >Block</button>
+	                          <button class="btn" >Remove</button>
 	                </td>          				
 					
 				</tr>
