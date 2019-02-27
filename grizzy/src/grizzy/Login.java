@@ -16,6 +16,7 @@ public class Login extends HttpServlet {
 	    
 	    static final String USER = "root";
 	    static final String PASS = "password-1";
+		private int rs1;
 protected void doPost(HttpServletRequest request, HttpServletResponse response)  
         throws ServletException, IOException {  
   
@@ -69,7 +70,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response)
              rd.forward(request, response);  
         }
         	String sqlq = "UPDATE logintable SET userstatus = " + userstatus + " WHERE userid = " + id + ";";
-        	int rs1 = stmt.executeUpdate(sqlq);
+        	rs1 = stmt.executeUpdate(sqlq);
         }	
         	
         else{  

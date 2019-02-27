@@ -12,6 +12,21 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.search
+	{
+  			border-radius:30px;
+ 			 background-color: #FFFFFF;
+ 			 border: none;
+ 			 color: 2px solid black;
+  			padding: 10px;
+  			text-align: left;
+ 			 text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+ 			 margin:2px;
+			width: 250px;
+ 			height: 30px;   
+	}
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -98,7 +113,8 @@ button:hover, a:hover {
          <div>
            <ul class="nav navbar-nav pull-right">
                <form action="servlet2" method="post">
-               <button class="button button5">Logout</button>
+               <button "nav-link btn btn-secondary"
+				href="navigator.jsp" role="button" style="border-radius: 20px; width: 150px; margin-top: 10px; background-color: #676767">Logout</button>
              </form>
            </ul>
           </div>
@@ -107,13 +123,11 @@ button:hover, a:hover {
       </div>
 </nav>
 
-
-
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-4">
       <div class="card">
-        <img src="/Users/shashidharreddy/img_avatar.png" alt="John" style="width:100%">
+        <img src="images/img_avatar.png" alt="John" style="width:100% ; height:25%;">
         <h1>Shashidhar</h1>
         <p class="title">CEO & Founder, Chaser</p>
         <p>Lovely Professional University</p>

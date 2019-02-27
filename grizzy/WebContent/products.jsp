@@ -40,49 +40,92 @@ ResultSet resultSet = null;
 input {
 	
 }
+
+.ip	{
+  			border-radius: 25px;
+ 			 background-color:  #e2e2e2;
+ 			 border: none;
+ 			 color: black;
+  			padding: 2px;
+  			text-align: left;
+ 			 text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+ 			 margin:2px;
+			width: 250px;
+ 			height: 30px;   
+	}
+.act	{
+  			border-radius: 25px;
+ 			 background-color:  #e2e2e2;
+ 			 border: none;
+ 			 color: gray;
+  			padding: 2px;
+  			text-align: left;
+ 			 text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+ 			 margin:2px;
+			width: 150px;
+ 			height: 30px;   
+}
+.sort{
+  			border-radius: 25px;
+ 			 background-color:  #e2e2e2;
+ 			 border: none;
+ 			 color: gray;
+  			padding: 2px;
+  			text-align: left;
+ 			 text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+ 			 margin:2px;
+			width: 120px;
+ 			height: 30px;   
+}
+.add{
+  			border-radius: 25px;
+ 			 background-color:#A9A9A9;
+ 			 border: none;
+ 			 color: white;
+  			padding: 2px;
+  			text-align: center;
+ 			 text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+ 			 margin:2px;
+			width: 120px;
+ 			height: 30px;   
+}
+button:active{
+  					  background:#A9A9A9;
+}
+	
 </style>
 <script>
 </script>
 </head>
-<body>
-	<div class="container-fluid">
+<body >
+	<div class="container-fluid" style="margin-left:-50px;">
 
-		<ul class="nav nav-pills nav-fill">
-
-			<li class="nav-item dropdown"><a
-				class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-				role="button" aria-haspopup="true" aria-expanded="false"
-				style="border-radius: 20px; margin-top: 10px; background-color: #E6E6E6; width: 200px; color: #F3F3F3;">
-					Filter by reference </a>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="#">Action</a> <a
-						class="dropdown-item" href="#">Another action</a> <a
-						class="dropdown-item" href="#">Something else here</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Separated link</a>
-				</div></li>
-
-			<li class="nav-item"><input class="form-control mr-sm-2"
-				type="search" placeholder="Category Name" aria-label="Search"
-				style="border-radius: 20px; margin-top: 10px; margin-left: -40px;"></li>
-
-			<li class="nav-item dropdown"><a
-				class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-				role="button" aria-haspopup="true" aria-expanded="false"
-				style="border-radius: 20px; background-color: #F2F2F2; width: 200px; color: #4E4E4E; margin-top: 10px;">
-					Sort by </a>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="#">Action</a> <a
-						class="dropdown-item" href="#">Another action</a> <a
-						class="dropdown-item" href="#">Something else here</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Separated link</a>
-				</div></li>
-			<li class="nav-item"><a class="nav-link btn btn-secondary"
-				href="navigator.jsp" role="button"
-				style="border-radius: 20px; width: 150px; margin-top: 10px; background-color: #676767">Add
-					Product</a></li>
-		</ul>
+	
+		
+		
+		 <div class="btn-group btn-block">
+    			 <select  class="act"><option> Choose Action</option>
+                                                                	 		<option> Low</option>
+                                                                			<option> Medium</option>                                                                      
+                                                                			<option> High</option>                                                                
+                                                                         </select>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<input type="text" placeholder="Product Name/ID..."  class="ip">
+                                                                	<select  class="sort ip"><option> Sort by</option>
+                                                                			<option> Low</option>
+                                                                			<option> Medium</option>                                                                      
+                                                                			<option> High</option>                                                                
+                                                                         </select>&emsp;&emsp;
+                                                                    <a href="navigator.jsp"><input type="submit"  value="Add Product"  class="add" class="button"/></a>&emsp;&emsp;
+                                                         </div> <br><br>
+		
 		<br>
 		<table class="table table-hover table-bordered table-stripped" style="border:6px solid black;border-style:hidden" rules="cols">
 			<thead>
@@ -137,3 +180,14 @@ input {
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+	
